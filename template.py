@@ -15,11 +15,12 @@ list_of_files = [
     f'src/cnnClassifier/utils/__init__.py',
     f'src/cnnClassifier/entity/__init__.py',
     f'src/cnnClassifier/constants/__init__.py',
-    f'config.yaml',
+    f'config/config.yaml',
     f'requirements.txt',
     f'params.yaml',
     f'research/trials.ipynb',
     f'dvc.yaml',
+    f'setup.py'
 ]
 
 for file_path in list_of_files:
