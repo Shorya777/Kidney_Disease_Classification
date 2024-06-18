@@ -7,8 +7,8 @@ logging.basicConfig(level= logging.INFO, format='[%(asctime)s]: %(message)s:')
 list_of_files = [
     f'src/cnnClassifier/__init__.py',
     f'src/cnnClassifier/components/__init__.py',
-    f'src/cnnClassifier/prepare_base_model/__init__.py',
-    f'src/cnnClassifier/model_training/__init__.py',
+    # f'src/cnnClassifier/prepare_base_model/__init__.py',
+    # f'src/cnnClassifier/model_training/__init__.py',
     f'src/cnnClassifier/pipeline/__init__.py',
     f'src/cnnClassifier/config/__init__.py',
     f'src/cnnClassifier/config/configuration.py',
