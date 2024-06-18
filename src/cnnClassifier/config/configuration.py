@@ -1,7 +1,7 @@
 from cnnClassifier.utils.common import read_yaml, create_directories
 from cnnClassifier.constants import *
 from cnnClassifier.entity.config_entity import (DataIngestionConfig, PrepareBaseModelConfig, TrainingConfig, EvaluationConfig)
-
+import os 
 
 class ConfigurationManager:
     def __init__(self, config_file_path= CONFIG_FILE_PATH, params_file_path= PARAMS_FILE_PATH):

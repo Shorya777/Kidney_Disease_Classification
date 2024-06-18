@@ -2,6 +2,7 @@ import tensorflow as tf
 from cnnClassifier.entity.config_entity import TrainingConfig
 from pathlib import Path
 
+
 class Training:
     def __init__(self, config: TrainingConfig):
         self.config = config
@@ -14,7 +15,7 @@ class Training:
 
         datagenerator_kwargs = dict(
             rescale = 1./255,
-            validation_split=0.20
+            validation_split=0.2
         )
 
         dataflow_kwargs = dict(
@@ -44,6 +45,7 @@ class Training:
                 zoom_range=0.2,
                 **datagenerator_kwargs
             )
+
         else:
             train_datagenerator = valid_datagenerator
 
@@ -60,7 +62,10 @@ class Training:
 
     def train(self):
         self.steps_per_epoch = self.train_generator.samples // self.train_generator.batch_size
+        # self.steps_per_epoch = 500// self.train_generator.batch_size
         self.validation_steps = self.valid_generator.samples // self.valid_generator.batch_size
+        # self.validation_steps = 100// self.valid_generator.batch_size
+
 
         self.model.fit(
             self.train_generator,
