@@ -30,7 +30,7 @@ class PrepareBaseModel:
 
         flatten_in = tf.keras.layers.Flatten()(model.output)
         dense1 = tf.keras.layers.Dense(
-            units=classes,
+            units=100,
             activation="softmax"
         )(flatten_in)
 
