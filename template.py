@@ -3,18 +3,19 @@ from pathlib import Path
 import os
 
 logging.basicConfig(level= logging.INFO, format='[%(asctime)s]: %(message)s:')
+project_name= 'cnnClassifier'
 
 list_of_files = [
-    f'src/cnnClassifier/__init__.py',
-    f'src/cnnClassifier/components/__init__.py',
-    # f'src/cnnClassifier/prepare_base_model/__init__.py',
-    # f'src/cnnClassifier/model_training/__init__.py',
-    f'src/cnnClassifier/pipeline/__init__.py',
-    f'src/cnnClassifier/config/__init__.py',
-    f'src/cnnClassifier/config/configuration.py',
-    f'src/cnnClassifier/utils/__init__.py',
-    f'src/cnnClassifier/entity/__init__.py',
-    f'src/cnnClassifier/constants/__init__.py',
+    f'src/{project_name}/__init__.py',
+    f'src/{project_name}/components/__init__.py',
+    # f'src/{project_name}/prepare_base_model/__init__.py',
+    # f'src/{project_name}/model_training/__init__.py',
+    f'src/{project_name}/pipeline/__init__.py',
+    f'src/{project_name}/config/__init__.py',
+    f'src/{project_name}/config/configuration.py',
+    f'src/{project_name}/utils/__init__.py',
+    f'src/{project_name}/entity/__init__.py',
+    f'src/{project_name}/constants/__init__.py',
     f'config/config.yaml',
     f'requirements.txt',
     f'params.yaml',
